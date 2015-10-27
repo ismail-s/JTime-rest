@@ -7,6 +7,9 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var db = require("sequelize-tools").db
+
+db.init()
 
 var app = express();
 
